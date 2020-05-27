@@ -65,16 +65,18 @@
 <!--          фото стрелочки-->
         </li>
         <li>
-          <span>Каталог</span>
+          <a href="catalog.html">Каталог</a>
           <!--          фото стрелочки-->
           <img src="https://via.placeholder.com/5x5" alt="">
         </li>
         <li>
-          <span>Инструмент</span>
+          <a href="catalog.html">Инструмент</a>
           <!--          фото стрелочки-->
           <img src="https://via.placeholder.com/5x5" alt="">
         </li>
-        <li>Перфораторы</li>
+        <li>
+          <a href="catalog.html">Перфораторы</a>
+        </li>
       </ul>
     </div>
     <h1>Перфораторы</h1>
@@ -85,18 +87,47 @@
 <!--      Ползунок фильтрующий диапозон цен -->
 <!--      две ячейки показывающие цифры -->
       <h2>Производители</h2>
-      <form action="" method="get">
-        <input type="checkbox" checked> Bosch <br>
-        <input type="checkbox"> Интерскол <br>
-        <input type="checkbox" checked> Makita <br>
-        <input type="checkbox"> DEWALT <br>
-        <input type="checkbox"> Hitachu <br>
+      <form action="http://echo.htmlacademy.ru" method="get" aria-label="Фильтр по производителю и питанию">
+        <fieldset>
+          <legend>Производители</legend>
+          <ul>
+            <li>
+              <input id="filter-manufacturer-bosch" type="checkbox" checked name="Bosch">
+              <label for="filter-manufacturer-bosch">Bosch</label>
+            </li>
+            <li>
+              <input id="filter-manufacturer-interskol" type="checkbox" name="Интерскол">
+              <label for="filter-manufacturer-interskol">Интерскол</label>
+            </li>
+            <li>
+              <input id="filter-manufacturer-makita" type="checkbox" checked name="Makita">
+              <label for="filter-manufacturer-makita">Makita</label>
+            </li>
+            <li>
+              <input id="filter-manufacturer-dewalt" type="checkbox" name="DEWALT">
+              <label for="filter-manufacturer-dewalt">DEWALT</label>
+            </li>
+            <li>
+              <input id="filter-manufacturer-Hitachi" type="checkbox" name="Hitachi">
+              <label for="filter-manufacturer-Hitachi">Hitachi</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Питание</legend>
+          <ul>
+            <li>
+              <input id="filter-nutrition-rechargeable" type="radio" checked name="nutrition" value="rechargeable">
+              <label for="filter-nutrition-rechargeable">АККУМУЛЯТОРНЫЕ</label>
+            </li>
+            <li>
+              <input id="filter-nutrition-network" type="radio" name="nutrition" value="network">
+              <label for="filter-nutrition-network">СЕТЕВЫЕ</label>
+            </li>
+          </ul>
+        </fieldset>
+      <button type="submit">Показать</button>
       </form>
-      <form action="" method="get">
-        <input type="radio" checked> АККУМУЛЯТОРНЫЕ <br>
-        <input type="radio"> СЕТЕВЫЕ
-      </form>
-      <button type="button">Показать</button>
     </section>
     <section>
       <article>
