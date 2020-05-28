@@ -83,8 +83,19 @@
     </section>
     <section>
       <h2>Фильтр:</h2>
-      <h2>Цена</h2>
-<!--      Ползунок фильтрующий диапозон цен -->
+<!--      <h2>Цена</h2>-->
+      <form method="post" oninput="price_output_min.value=price_filter.value" class="price">
+        <div>
+          <label for="price_filter">Цена</label> <br>
+          <input type="range" id="price_filter" name="price_filter" min="1" max="30000" step="1">
+        </div>
+        <div>
+          <output name="price_output_min">0</output>
+          <output name="price_output_max">30000</output>
+        </div>
+      </form>
+
+
 <!--      две ячейки показывающие цифры -->
       <h2>Производители</h2>
       <form action="http://echo.htmlacademy.ru" method="get" aria-label="Фильтр по производителю и питанию">
@@ -338,7 +349,6 @@
       </div>
     </section>
   </footer>
-
 
 </body>
 </html>
