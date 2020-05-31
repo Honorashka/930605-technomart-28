@@ -1,0 +1,244 @@
+/* Variables */
+
+:root{
+  --basic-white: #FFFFFF;
+  --basic-black:#000000;
+  --basic-blue-light: #32425C;
+  --basic-blue-dark:#293449;
+  --basic-blue-verydark:#1D2739;
+  --basic-red: #EE3643;
+  --basic-red-dark: #BA2732;
+  --basic-yellow: #FFD180;
+  --basic-green: #63A63E;
+  --basic-green-light: #5FBB2D;
+  --basic-grey-light: #C5C5C5;
+  --basic-grey: #A9A9A9;
+  --basic-background-grey: #F3F7F9;
+}
+
+/* Global */
+
+body {
+  min-width: 960px;
+  margin: 0;
+  padding: 0;
+  font-family: "Cuprum", Arial, sans-serif;
+  font-weight: 400;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+li {
+  list-style: none;
+}
+
+.main-info {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--basic-white);
+  background-color: var(--basic-blue-dark);
+}
+.main-info a{
+  color: var(--basic-white);
+}
+.main-info a:focus{
+  color: var(--basic-grey-light)
+}
+.main-checkout{
+  background-color: var(--basic-green);
+}
+.main-checkout:focus {
+  background-color: var(--basic-green);
+}
+.main-checkout:hover {
+  background-color: var(--basic-green-light);
+}
+.main-navigation-wrapper{
+  background-color: var(--basic-background-grey);
+}
+.user-navigation p {
+  font-size: 16px;
+  line-height: 23px;
+  font-style: italic;
+  font-weight: 400;
+  color: var(--basic-red);
+}
+.main-login a {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 400;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+.main-login a:hover{
+  color: var(--basic-red)
+}
+.main-login a:focus{
+  color: var(--basic-grey-light);
+}
+.phone {
+  font-size: 21px;
+  line-height: 30px;
+  font-weight: 700;
+  color: var(--basic-red)
+}
+.main-address {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--basic-blue-light)
+}
+.main-navigation {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  background-color: var(--basic-blue-light);
+}
+.main-navigation a{
+  color:  var(--basic-white);
+}
+.main-navigation a:focus{
+  opacity: 0.5;
+}
+.main-navigation li:hover{
+  background-color: var(--basic-blue-dark);
+}
+.main-navigation li:focus{
+  background-color: var(--basic-blue-verydark);
+}
+.advantages li:not(:nth-child(4)){
+  max-width: 300px;
+  max-height: 123px;
+}
+.advantages h3{
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+}
+.advantages{
+  color: var(--basic-white);
+}
+.advantages-button{
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--basic-white);
+  background-color: rgba(255,255,255,0.3);
+}
+.advantages-button:hover{
+  background-color: rgba(197, 197, 197, 0.3);
+}
+.advantages-button:focus {
+  background-color: rgba(169, 169, 169, 0.3);
+}
+.advantages-materials{
+  background-color: #FFBF47;
+}
+.advantages-tools{
+  background-color: #3BBCE3;
+}
+.advantages-technics{
+  background-color: #DC91D8;
+}
+.advantages-gallery{
+  width: 620px;
+  height: 266px;
+  background-image: url("../img/perforators.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.button {
+  text-align: center;
+  color: var(--basic-white);
+  text-transform: uppercase;
+  border: none;
+  background-color: var(--basic-red);
+}
+.button:hover{
+  background-color: var(--basic-red);
+}
+.button:focus{
+  background-color: var(--basic-red-dark);
+}
+.figure h3{
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+  color: var(--basic-white);
+}
+.figure p{
+  font-size: 18px;
+  line-height: 24px;
+}
+.advantages-discounts{
+  background-color: #8ED78F;
+}
+.advantages-delivery{
+  background-color: #FFC047;
+}
+.product-popular{
+  background-color: #F9F5F0;
+}
+.product h2{
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--basic-blue-light);
+}
+.catalog-list {
+  font-family: "PT Sans", Arial, sans-serif;
+}
+.catalog-item h3{
+
+}
+.catalog-item {
+  max-width: 220px;
+  background-color: var(--basic-white);
+  border: 1px solid #EAEAEA;
+  text-align: center;
+}
+.catalog-item a{
+  font-size: 18px;
+  line-height: 20px;
+  color: var(--basic-black);
+}
+.catalog-item-oldprice {
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 700;
+  text-decoration-line: line-through;
+  color: var(--basic-grey);
+}
+.catalog-item-newprice {
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 700;
+  color: var(--basic-white);
+  background-color: var(--basic-red);
+}
+.catalog-item-newprice:focus{
+  outline: none;
+}
+.manufacturer-popular{
+  background-color: #F9F5F0;
+}
+.manufacturer-popular h2{
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--basic-blue-light);
+}
+.manufacturer-item {
+  max-width: 220px;
+  max-height: 145px;
+  background-color: var(--basic-white);
+  text-align: center;
+  border: 1px solid #EAEAEA;
+}
