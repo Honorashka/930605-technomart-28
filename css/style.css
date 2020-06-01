@@ -14,6 +14,9 @@
   --basic-grey-light: #C5C5C5;
   --basic-grey: #A9A9A9;
   --basic-background-grey: #F3F7F9;
+  --basic-yellow-light: #FFD180;
+  --basic-grey-overlight: #F1F5F7;
+  --basic-brown-light:#F1F5F7;
 }
 
 /* Global */
@@ -35,11 +38,9 @@ img {
 li {
   list-style: none;
 }
-
 .main-info {
   font-size: 18px;
   line-height: 24px;
-  font-weight: 400;
   color: var(--basic-white);
   background-color: var(--basic-blue-dark);
 }
@@ -48,6 +49,9 @@ li {
 }
 .main-info a:focus{
   color: var(--basic-grey-light)
+}
+.main-logo{
+  background-color: var(--basic-red) ;
 }
 .main-checkout{
   background-color: var(--basic-green);
@@ -65,13 +69,11 @@ li {
   font-size: 16px;
   line-height: 23px;
   font-style: italic;
-  font-weight: 400;
   color: var(--basic-red);
 }
 .main-login a {
   font-size: 21px;
   line-height: 21px;
-  font-weight: 400;
   color: var(--basic-black);
   background-color: var(--basic-white);
 }
@@ -90,13 +92,11 @@ li {
 .main-address {
   font-size: 14px;
   line-height: 24px;
-  font-weight: 400;
   color: var(--basic-blue-light)
 }
 .main-navigation {
   font-size: 18px;
   line-height: 24px;
-  font-weight: 400;
   background-color: var(--basic-blue-light);
 }
 .main-navigation a{
@@ -182,12 +182,11 @@ li {
   background-color: #FFC047;
 }
 .product-popular{
-  background-color: #F9F5F0;
+  background-color: var(--basic-brown-light);
 }
 .product h2{
   font-size: 30px;
   line-height: 30px;
-  font-weight: 400;
   text-transform: uppercase;
   color: var(--basic-blue-light);
 }
@@ -222,11 +221,20 @@ li {
   color: var(--basic-white);
   background-color: var(--basic-red);
 }
+/*неудачный треугольник на кнопке */
+.catalog-item-newprice:after{
+  /*content: "";*/
+  /*width: 0;*/
+  /*height: 0;*/
+  /*border-style: solid;*/
+  /*border-width: 10px 0 10px 17.3px;*/
+  /*border-color: transparent transparent transparent #ff0000;*/
+}
 .catalog-item-newprice:focus{
   outline: none;
 }
 .manufacturer-popular{
-  background-color: #F9F5F0;
+  background-color: var(--basic-brown-light);
 }
 .manufacturer-popular h2{
   font-size: 30px;
@@ -241,4 +249,124 @@ li {
   background-color: var(--basic-white);
   text-align: center;
   border: 1px solid #EAEAEA;
+}
+.service {
+  background-color: var(--basic-grey-overlight);
+}
+.service h2{
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 30px;
+  color: var(--basic-black);
+  text-transform: uppercase;
+}
+.service p{
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.service-delivery{
+  color: var(--basic-blue-light);
+}
+.service-button{
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 30px;
+  color: var(--basic-white);
+  background-color: var(--basic-blue-light);
+  box-shadow: 0px 1px 0px #293449, inset 0px 1px 0px #405069;
+  border: none;
+}
+.service-button:focus{
+  outline: none;
+}
+.service-button:hover{
+  background-color: var(--basic-blue-dark);
+}
+/*тут как-то нужно сделать кнопку всегда активной, и задать ей фон и цвет текса, с помощью гугла говорит что только с помощью js*/
+.company-info{
+  background-color: var(--basic-white);
+  color:var(--basic-black);
+}
+.company-info h2{
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.company-info p{
+  font-family: "PT Sans", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+}
+.company-shopping li{
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.footer-wrapper{
+  background-color: var(--basic-blue-light);
+}
+.footer-navigation-info {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.footer-navigation-info address{
+  font-style: normal;
+  color: var(--basic-background-grey);
+}
+.footer-navigation-info a{
+  color: var(--basic-background-grey);
+}
+.footer-navigation-menu {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+}
+.footer-navigation-list-info a{
+  color: #F1F5F7;
+}
+.footer-navigation-list-catalog a{
+  color: #FFDA96;
+}
+.footer-navigation-menu a:hover{
+  text-decoration: underline;
+}
+.footer-navigation-menu a:focus{
+  opacity: 0.5;
+}
+.footer-navigation-contact{
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: var(--basic-white);
+  background-color: var(--basic-blue-dark);
+}
+.footer-img-wrapper{
+  width: 44px;
+  height: 44px;
+  background: linear-gradient(0deg, #212A3A, #212A3A);
+  border-radius: 100%;
+  position: relative;
+}
+.footer-img-wrapper img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.footer-img-wrapper:hover{
+  background: var(--basic-red);
+}
+.footer-feedback a{
+  color: var(--basic-yellow-light);
+}
+.footer-feedback a:hover{
+  text-decoration: underline;
+}
+.footer-feedback a:focus{
+  color: var(--basic-red);
 }
