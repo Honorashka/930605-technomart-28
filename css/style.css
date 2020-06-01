@@ -87,12 +87,39 @@ li {
   font-size: 21px;
   line-height: 30px;
   font-weight: 700;
-  color: var(--basic-red)
+  color: var(--basic-red);
+  border: 2px solid white;
 }
 .main-address {
   font-size: 14px;
   line-height: 24px;
-  color: var(--basic-blue-light)
+  color: var(--basic-blue-light);
+  font-style: normal;
+}
+.username a{
+  width: 299px;
+  min-height: 45px;
+  text-align: center;
+  font-size: 21px;
+  line-height: 21px;
+  font-style: normal;
+  color: var(--basic-black);
+  text-transform: capitalize;
+  background-color: var(--basic-white);
+}
+.username a:focus{
+  color: var(--basic-grey-light);
+}
+.username-status a{
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-blue-light);
+}
+.username-status a:hover{
+  color: var(--basic-red)
+}
+.username-status a:focus{
+  color: var(--basic-grey-light)
 }
 .main-navigation {
   font-size: 18px;
