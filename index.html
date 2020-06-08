@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
@@ -8,59 +8,73 @@
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="page-body">
     <header class="main-header">
-      <div class="container">
       <section class="main-info">
+        <div class="container">
+          <div class="main-info-wrapper">
+            <div class="main-info-logo-wrapper">
         <a class="main-logo" href="index.html">
-          <img src="img/logo-technomart.svg" alt="Логотип"></a>
-        <input type="search" placeholder="Поиск:">
-        <a href="#">Закладки:0</a>
-        <a href="#">Корзина:0</a>
+          <img src="img/logo-technomart.svg" alt="Логотип">
+        </a>
 
-        <a class="main-checkout" href="#">Оформить заказ</a>
+            </div>
+            <div class="main-info-checkout-wrapper">
+              <input type="search" placeholder="Поиск:">
+              <a href="#">Закладки:0</a>
+              <a href="#">Корзина:0</a>
+               <a class="main-checkout" href="#">Оформить заказ</a>
+            </div>
+        </div>
+        </div>
       </section>
-        <div class="main-navigation-wrapper">
       <section class="user-navigation">
+        <div class="container">
+        <div class="user-navigation-wrapper">
         <p>Интернет-магазин <br> строительных материалов <br> и инструментов для ремонта</p>
-        <a class="phone" href="tel:+7 (812) 555-05-55">+7 (812) 555-05-55</a>
+          <div class="main-phone-wrapper"><a class="phone" href="tel:+7 (812) 555-05-55">+7 (812) 555-05-55</a>
         <address class="main-address">г.Санкт-Петербург , ул. Б.Конюшенная, д.19/8</address>
+          </div>
         <div class="main-login">
         <a href="#">Войти</a>
         <a href="#">Регистрация</a>
         </div>
-      </section>
-      <nav class="main-navigation">
-        <ul>
-          <li>
-            <a href="index.html">Главная</a>
-          </li>
-          <li>
-            <a href="#">Компания</a>
-          </li>
-          <li>
-            <a href="catalog.html">Каталог</a>
-          </li>
-          <li>
-            <a href="#">Новости</a>
-          </li>
-          <li>
-            <a href="#">Спецпредложения</a>
-          </li>
-          <li>
-            <a href="#">Доставка</a>
-          </li>
-          <li>
-            <a href="#">Контакты</a>
-          </li>
-        </ul>
-      </nav>
         </div>
-      </div>
+          <nav class="main-navigation">
+<!--            <div class="container">-->
+              <div class="main-navigation-wrapper">
+                <ul>
+                  <li>
+                    <a href="index.html">Главная</a>
+                  </li>
+                  <li>
+                    <a href="#">Компания</a>
+                  </li>
+                  <li>
+                    <a href="catalog.html">Каталог</a>
+                  </li>
+                  <li>
+                    <a href="#">Новости</a>
+                  </li>
+                  <li>
+                    <a href="#">Спецпредложения</a>
+                  </li>
+                  <li>
+                    <a href="#">Доставка</a>
+                  </li>
+                  <li>
+                    <a href="#">Контакты</a>
+                  </li>
+                </ul>
+            </div>
+          </nav>
+        </div>
+      </section>
     </header>
     <main>
       <section class="advantages">
-        <ul>
+        <div class="container">
+        <ul class="advantages-list">
           <li class="advantages-materials">
             <h3>Материалы</h3>
             <span>
@@ -101,15 +115,16 @@
             <a class="advantages-button" href="catalog.html">Бесплатно</a>
             <img src="img/delivery.svg" width="78" height="63" alt="">
           </li>
-
         </ul>
+        </div>
       </section>
       <section class="product">
+        <div class="container">
          <article class="product-popular">
            <h2>Популярные товары:</h2>
            <a class="button" href="catalog.html">Все популярные товары</a>
          </article>
-         <ul сlass="catalog-list">
+         <ul class="catalog-list">
            <li class="catalog-item">
              <a href="#">
                <p class="catalog-item-image">
@@ -158,8 +173,10 @@
              </p>
            </li>
          </ul>
+        </div>
        </section>
       <section class="manufacturer">
+        <div class="container">
         <article class="manufacturer-popular">
           <h2>Популярные производители</h2>
           <a class="button" href="catalog.html">Все производители</a>
@@ -206,22 +223,33 @@
             </a>
           </li>
         </ul>
+        </div>
       </section>
       <section class="service">
+        <div class="container">
         <h2>Сервисы</h2>
         <p>Хороший интернет магазин отличается от плохого не только ценами! <br>
         Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+          <div class="service-wrapper">
+            <div class="service-button-wrapper">
         <button class="service-button" type="button">Доставка</button>
         <button class="service-button" type="button">Гарантия</button>
         <button class="service-button" type="button">Кредит</button>
+            </div>
+            <div class="service-delivery-wrapper">
         <h2 class="service-delivery" >Доставка</h2>
         <p>Мы с удовольствием доставим ваш товар прямо <br>
         к вашему подъезду совершенно бесплатно!<br>
         Ведь мы неплохо заработаем <br>
         поднимая его на ваш этаж!</p>
+            </div>
         <img src="img/truck-delivery.png" width="468" height="261" alt="truck">
+          </div>
+        </div>
       </section>
       <div class="company-info">
+        <div class="container">
+          <div class="company-info-wrapper">
       <section class="company-shopping">
         <h2>Компания техномарт</h2>
         <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для <br>
@@ -243,10 +271,15 @@
         <div><img src="img/maps.png" width="300" height="158" alt="maps"></div>
         <a class="button" href="#">Заблудились, Напишите нам!</a>
       </section>
+          </div>
+        </div>
+        </div>
       </div>
     </main>
     <footer>
       <div class="footer-wrapper">
+        <div class="container">
+          <div class="footer-navigation-wrapper">
       <section class="footer-navigation-info">
         <a class="main-logo" href="index.html">
           <img src="img/logo-technomart.svg" alt="Логотип">
@@ -287,11 +320,15 @@
           </li>
         </ul>
       </section>
+          </div>
+        </div>
       </div>
       <section class="footer-navigation-contact">
-          <span>
+        <div class="container">
+        <div class="footer-wrapper-contact">
+          <div  class="footer-company-year">
             © 2010-2019 Компания «Техномарт» <br> Все права защищены
-          </span>
+          </div>
         <ul class="footer-contact-list">
           <li>
             <a href="http://vk.com">
@@ -318,6 +355,8 @@
         <div class="footer-feedback">
           <p>Обратная связь <br> <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
           <p>Разработано <br> <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
+        </div>
+          </div>
         </div>
       </section>
     </footer>
