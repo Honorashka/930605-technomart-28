@@ -299,6 +299,9 @@ li {
   margin-right: 20px;
   margin-bottom: 18px;
 }
+.catalog-item:last-child {
+  margin-right: 0;
+}
 .catalog-item a{
   font-size: 18px;
   line-height: 20px;
