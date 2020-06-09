@@ -282,16 +282,22 @@ li {
 .catalog-list {
   font-family: "PT Sans", Arial, sans-serif;
   display: flex;
-  justify-content: space-between;
+  /*justify-content: space-between;*/
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 28px 0 58px 0;
 }
 .catalog-item h3{
 
 }
 .catalog-item {
-  max-width: 220px;
+  width: 220px;
+  min-height: 318px;
   background-color: var(--basic-white);
   border: 1px solid #EAEAEA;
   text-align: center;
+  margin-right: 20px;
+  margin-bottom: 18px;
 }
 .catalog-item a{
   font-size: 18px;
@@ -518,6 +524,9 @@ li {
 }
 
 /*catalog дополнительные стили к main*/
+.catalog-category-list{
+  display: flex;
+}
 .catalog-category-list a{
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
@@ -540,9 +549,23 @@ li {
   line-height: 18px;
   font-weight: 400;
   color: var(--basic-black);
+  margin: 0;
+  padding: 0;
 }
-.catalog-filter-background{
+.catalog-filter-background {
   background-color: var(--basic-brown);
+  margin: 0;
+  padding: 0;
+  margin-bottom: 14px;
+}
+.catalog-filter-wrapper{
+  background-color: var(--basic-brown);
+  display: flex;
+  justify-content: space-around;
+}
+.catalog-filter-wrapper h2{
+  margin: 0;
+  padding: 0;
 }
 .content-filter{
   font-weight: 700;
@@ -587,6 +610,9 @@ li {
   color: var(--basic-red);
   border: transparent;
 }
+.product-list li {
+  margin-right: 10px;
+}
 .product-list a{
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
@@ -610,6 +636,8 @@ li {
   text-transform: uppercase;
   font-weight: 400;
   color: var(--basic-black);
+  padding: 0;
+  margin: 0;
 }
 .catalog-history p{
   font-family: "PT Sans", Arial, sans-serif;
@@ -617,4 +645,36 @@ li {
   font-size: 13px;
   line-height: 24px;
   color: var(--basic-black);
+  padding: 0;
+  margin: 0;
+}
+
+/* GRID main, catalog */
+.page-catalog{
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  align-content: start;
+}}
+.page-catalog .page-title{
+  grid-column: 1 / -1;
+  padding: 0;
+  margin: 0;
+}
+.page-catalog .catalog-filter{
+  margin-right: 28px;
+}
+.page-catalog .catalog-category{
+  grid-column: 1 / -1;
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+}
+.page-catalog .catalog-list{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 28px 0 58px 0;
+}
+.page-catalog .product-list{
+  display: flex;
 }
