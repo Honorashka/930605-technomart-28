@@ -96,54 +96,65 @@
     <h1 class="page-title">Перфораторы</h1>
     </section>
       <section class="catalog-filter">
-      <h2 class="catalog-filter-background">Фильтр:</h2>
-<!--      <h2>Цена</h2>-->
-      <form method="post" oninput="price_output_min.value=price_filter.value" class="price">
-          <label class="content-filter" for="price_filter_label">Цена:</label> <br>
-          <input class="catalog-filter-background" type="range" id="price_filter_label" name="price_filter" min="1" max="30000" step="1">
-        <div>
-          <output class="catalog-filter-background" name="price_output_min">0</output>
-          <output class="catalog-filter-background" name="price_output_max">30000</output>
-        </div>
-      </form>
-
-
+        <form method="get" action="https://echo.htmlacademy.ru" oninput="price_output_min.value=price_filter.value" class="price">
+          <h2 class="catalog-filter-background">Фильтр:</h2>
+          <fieldset class="filter-item">
+            <legend>Цена:</legend>
+            <div class="range-filter">
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="toogle toogle-min" tabindex="0"></div>
+              <div class="toogle toogle-max" tabindex="0"></div>
+            </div>
+            <div class="price-controls">
+              <label class="min-price" for="">
+                <input type="number" name="min-price" value="0">
+              </label>
+              <label class="max-price" for="">
+                <input type="number" name="max-price" value="30 000" placeholder="30000">
+              </label>
+            </div>
+            </div>
+          </fieldset>
+        </form>
 <!--      две ячейки показывающие цифры -->
       <form action="http://echo.htmlacademy.ru" method="get" aria-label="Фильтр по производителю и питанию">
-        <fieldset>
-          <legend class="content-filter">Производители</legend>
-          <ul>
+        <fieldset class="content-filter-wrapper">
+          <legend class="content-filter">Производители:</legend>
+          <ul class="content-filter-list">
             <li>
-              <input id="filter-manufacturer-bosch" type="checkbox" checked name="Bosch">
+              <input class="filter-input-checkbox visually-hidden" id="filter-manufacturer-bosch" type="checkbox" checked name="Bosch">
               <label class="content-filter-item" for="filter-manufacturer-bosch">Bosch</label>
             </li>
             <li>
-              <input id="filter-manufacturer-interskol" type="checkbox" name="Интерскол">
+              <input class="filter-input-checkbox visually-hidden"  id="filter-manufacturer-interskol" type="checkbox" name="Интерскол">
               <label class="content-filter-item" for="filter-manufacturer-interskol">Интерскол</label>
             </li>
             <li>
-              <input id="filter-manufacturer-makita" type="checkbox" checked name="Makita">
+              <input class="filter-input-checkbox visually-hidden" id="filter-manufacturer-makita" type="checkbox" checked name="Makita">
               <label class="content-filter-item" for="filter-manufacturer-makita">Makita</label>
             </li>
             <li>
-              <input id="filter-manufacturer-dewalt" type="checkbox" name="DEWALT">
+              <input class="filter-input-checkbox visually-hidden" id="filter-manufacturer-dewalt" type="checkbox" name="DEWALT">
               <label class="content-filter-item" for="filter-manufacturer-dewalt">DEWALT</label>
             </li>
             <li>
-              <input id="filter-manufacturer-Hitachi" type="checkbox" name="Hitachi">
+              <input class="filter-input-checkbox visually-hidden" id="filter-manufacturer-Hitachi" type="checkbox" name="Hitachi">
               <label class="content-filter-item" for="filter-manufacturer-Hitachi">Hitachi</label>
             </li>
           </ul>
         </fieldset>
-        <fieldset>
+        <fieldset class="content-filter-wrapper content-filter-radio">
           <legend class="content-filter">Питание</legend>
-          <ul>
+          <ul class="content-filter-list">
             <li>
-              <input id="filter-nutrition-rechargeable" type="radio" checked name="nutrition" value="rechargeable">
+              <input class="filter-input-radio visually-hidden" id="filter-nutrition-rechargeable" type="radio" checked name="nutrition" value="rechargeable">
               <label class="content-filter-item" for="filter-nutrition-rechargeable">АККУМУЛЯТОРНЫЕ</label>
             </li>
             <li>
-              <input id="filter-nutrition-network" type="radio" name="nutrition" value="network">
+              <input class="filter-input-radio visually-hidden" id="filter-nutrition-network" type="radio" name="nutrition" value="network">
               <label class="content-filter-item" for="filter-nutrition-network">СЕТЕВЫЕ</label>
             </li>
           </ul>
@@ -154,13 +165,13 @@
       <section class="product">
 <!--      тут сортировка товара-->
       <article class="catalog-filter-wrapper">
-        <h2>Сортировка</h2>
-        <button type="button" >По цене</button>
-        <button type="button">По типу</button>
-        <button type="button">По функционалу</button>
+        <h2>Сортировка:</h2>
+        <button type="button" class="button-price">По цене</button>
+        <button type="button" class="button-type">По типу</button>
+        <button type="button" class="button-function">По функционалу</button>
         <!--        две стрелочки сортирующие вверх или вниз-->
         <button type="button" class="button-up"></button>
-        <button type="button" class="button-down">Вниз</button>
+        <button type="button" class="button-down"></button>
       </article>
 <!--      Тут будут карточка товаров-->
       <ul class="catalog-list">
@@ -275,15 +286,17 @@
       </ul>
       <ul class="product-list">
         <li>
-          <a href="catalog.html">1</a>
+          <button type="button">1</button>
         </li>
         <li>
-          <a href="catalog.html">2</a>
+          <button type="button">2</button>
         </li>
         <li>
-          <a href="catalog.html">3</a>
+          <button type="button">3</button>
         </li>
-        <a href="catalog.html">Следующая</a>
+        <li>
+          <button type="button">Следующая</button>
+        </li>
       </ul>
     </section>
     </section>
