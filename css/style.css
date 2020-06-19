@@ -15,6 +15,7 @@
   --basic-yellow: #FFD180;
   --basic-green: #63A63E;
   --basic-green-light: #5FBB2D;
+  --basic-green-dark: #518534;
   --basic-green-bar:#00ca74;
   --basic-grey-light: #C5C5C5;
   --basic-grey: #A9A9A9;
@@ -746,8 +747,7 @@ input[type="radio"].visually-hidden {
   text-align: center;
   min-width: 122px;
   min-height: 38px;
-  padding-top: 0;
-  padding-bottom: 0;
+  padding: 0;
   border: none;
   position: relative;
 }
@@ -1303,6 +1303,8 @@ input[type="radio"].visually-hidden {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 18px;
+  text-transform: uppercase;
+  margin-bottom: 14px;
 }
 .catalog-filter-background {
   min-width: 202px;
@@ -1310,6 +1312,76 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
   border-radius: 5px;
+}
+.catalog-item-buy {
+  display: none;
+}
+.catalog-item-buy button {
+  margin: 0;
+  padding: 0;
+  width: 135px;
+  padding-top: 11px;
+  padding-bottom: 9px;
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  border: none;
+  text-transform: uppercase;
+  outline: none;
+}
+.catalog-item-buy button:first-child {
+  margin-top: 38px;
+  margin-bottom: 10px;
+  background: var(--basic-green);
+  color: var(--basic-white);
+  box-shadow: inset 0px -3px 0px #367315;
+  border-radius: 2px;
+  position: relative;
+}
+.catalog-item-buy button:first-child:after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-image: url("../img/icon-basket.svg");
+  background-repeat: no-repeat;
+  top: 11px;
+  left: 25px;
+}
+.catalog-item-buy button:last-child {
+  margin-bottom: 54px;
+  color: var(--basic-blue-light);
+  background: var(--basic-white);
+  border: 3px solid var(--basic-green);
+  box-sizing: border-box;
+  border-radius: 2px;
+}
+.catalog-item-buy button:first-child:hover {
+  background: var(--basic-green-light);
+}
+.catalog-item-buy button:last-child:hover {
+  border: 3px solid var(--basic-blue-light);
+}
+.catalog-item-buy button:first-child:focus {
+  background: var(--basic-green-dark);
+}
+.catalog-item-buy button:last-child:focus {
+  border: 3px solid var(--basic-blue-light);
+  opacity: 0.5;
+}
+.catalog-item:hover .catalog-item-buy {
+  min-width: 219px;
+  height:140px;
+  position: absolute;
+  top:0;
+  left:0;
+  background-color: var(--basic-white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*justify-content: center;*/
+
 }
 
 /*Фильтр цены, слева*/
@@ -1333,7 +1405,6 @@ input[type="radio"].visually-hidden {
   font-weight: 700;
   color: var(--basic-black);
   text-transform: uppercase;
-  margin-top: 14px;
 }
 .range-controls{
   background-color: var(--basic-brown);
