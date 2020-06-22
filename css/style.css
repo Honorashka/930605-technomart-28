@@ -116,6 +116,7 @@ input[type="radio"].visually-hidden {
   opacity: 0.5;
 }
 .main-info-bookmark {
+  max-width: 150px;
   margin: 0;
   padding: 0;
   display: block;
@@ -145,6 +146,7 @@ input[type="radio"].visually-hidden {
   height: 16px;
 }
 .main-info-basket {
+  max-width: 150px;
   margin: 0;
   padding: 0;
   display: block;
@@ -204,7 +206,6 @@ input[type="radio"].visually-hidden {
 .header-search {
   background: transparent;
   border: none;
-  outline: none;
   min-width: 246px;
   padding-left: 42px;
   padding-bottom: 11px;
@@ -253,6 +254,7 @@ input[type="radio"].visually-hidden {
   text-align: center;
 }
 .main-checkout{
+  max-width: 150px;
   margin: 0;
   padding: 0;
   display: block;
@@ -729,9 +731,13 @@ input[type="radio"].visually-hidden {
   margin: 0;
   order: 1;
   margin-bottom: 7px;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
 }
 .catalog-item p {
   margin: 0;
+  padding-right: 7px;
 }
 .catalog-item {
   width: 220px;
@@ -739,7 +745,7 @@ input[type="radio"].visually-hidden {
   background-color: var(--basic-white);
   border: 1px solid #EAEAEA;
   text-align: center;
-  margin-bottom: 18px;
+  margin-bottom: 15px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -795,11 +801,12 @@ input[type="radio"].visually-hidden {
   margin-bottom: 21px;
   display: inline-block;
   text-align: center;
-  min-width: 122px;
+  min-width: 115px;
   min-height: 38px;
   padding: 0;
   border: none;
   position: relative;
+  padding-left: 7px;
 }
 .catalog-item-newprice:after{
   content: "";
@@ -813,7 +820,12 @@ input[type="radio"].visually-hidden {
   outline: none;
 }
 .catalog-item-image {
-  min-height: 180px;
+  height: 159px;
+  width: 200px;
+  display: inline-block;
+  padding-top: 21px;
+  padding-right: 16px;
+
 }
 .manufacturer {
   margin-bottom: 70px;
@@ -832,7 +844,7 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
   color: var(--basic-blue-light);
   padding-left: 28px;
-  padding-top: 28px;
+  padding-top: 30px;
   padding-bottom: 28px;
 }
 .manufacturer-popular .button {
@@ -972,7 +984,7 @@ input[type="radio"].visually-hidden {
 .company-info{
   background-color: var(--basic-white);
   color:var(--basic-black);
-  padding-bottom: 70px;
+  padding-bottom: 71px;
 }
 .company-info h2{
   font-size: 30px;
@@ -1056,9 +1068,9 @@ input[type="radio"].visually-hidden {
   margin: 0;
   min-width: 220px;
   padding-top: 21px;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
   text-align: center;
-  margin-bottom: 22px;
+  margin-bottom: 27px;
 }
 .footer-navigation-info .main-logo img {
   height: 21px;
@@ -1197,6 +1209,9 @@ input[type="radio"].visually-hidden {
   margin-top: 21px;
   margin-bottom: 20px;
 }
+.catalog-category-item {
+  margin-right: 41px;
+}
 .catalog-category-list a{
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
@@ -1204,7 +1219,6 @@ input[type="radio"].visually-hidden {
   font-weight: 400;
   text-transform: uppercase;
   color: var(--basic-black);
-  margin-right: 40px;
   position: relative;
 }
 .catalog-category-list a:after {
@@ -1215,8 +1229,8 @@ input[type="radio"].visually-hidden {
   width: 8px;
   height: 12px;
   position: absolute;
-  top:0;
-  right: -20px;
+  top:1px;
+  right: -24px;
 }
 .catalog-category h1{
   font-size: 30px;
@@ -1277,7 +1291,7 @@ input[type="radio"].visually-hidden {
   margin-top: 10px;
   margin-bottom: 10px;
   border-bottom: 1px dotted var(--basic-red);
-  margin-right: 70px;
+  margin-right: 68px;
 }
 .button-function {
   margin-right: 46px;
@@ -1399,7 +1413,6 @@ input[type="radio"].visually-hidden {
   font-weight: 400;
   border: none;
   text-transform: uppercase;
-  outline: none;
 }
 .catalog-item-buy button:first-child {
   margin-top: 38px;
@@ -1527,7 +1540,6 @@ input[type="radio"].visually-hidden {
 .price-controls input{
   font-family: inherit;
   font-size: inherit;
-  width: 95px;
   padding: 0;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -1536,6 +1548,7 @@ input[type="radio"].visually-hidden {
   background: var(--basic-brown);
   border-radius: 5px;
   margin-bottom: 25px;
+  padding-left: 15px;
 }
 
 /*Фильтр по производителям*/
@@ -1567,7 +1580,7 @@ input[type="radio"].visually-hidden {
   position: relative;
   display: flex;
   align-items: center;
-  margin-top: 17px;
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 .content-filter-list label{
@@ -1681,6 +1694,7 @@ input[type="radio"].visually-hidden {
 .content-filter-radio {
   border-bottom: none;
   margin-bottom: 0;
+  padding-top: 4px;
 }
 
  /*Карточки товара*/
@@ -1710,6 +1724,7 @@ input[type="radio"].visually-hidden {
   padding: 0;
   padding-top: 10px;
   padding-bottom: 10px;
+  text-transform: uppercase;
 }
 .catalog-sort{
   font-size: 13px;
@@ -1740,7 +1755,7 @@ input[type="radio"].visually-hidden {
   margin-bottom: 59px;
 }
 .product-list li {
-  margin-right: 10px;
+  margin-right: 9px;
 }
 .product-list button{
   font-family: "PT Sans", Arial, sans-serif;
@@ -1752,15 +1767,15 @@ input[type="radio"].visually-hidden {
   background-color: var(--basic-white);
   border: 1px solid var(--basic-white-border);
   border-radius: 2px;
-  min-height: 38px;
-  min-width: 38px;
+  min-height: 37px;
+  min-width: 37px;
   outline: transparent;
   margin: 0;
   padding: 0;
 }
 .product-list li:last-child button {
-  min-width: 140px;
-  min-height: 38px;
+  min-width: 139px;
+  min-height: 37px;
 }
 .product-list button:hover {
   border: 1px solid var(--basic-grey-light);
@@ -1775,6 +1790,7 @@ input[type="radio"].visually-hidden {
 }
 .catalog-history{
   background-color: var(--basic-brown-light);
+  padding-bottom: 71px;
 }
 .catalog-history h2{
   font-size: 30px;
@@ -1796,7 +1812,6 @@ input[type="radio"].visually-hidden {
   color: var(--basic-black);
   padding: 0;
   margin: 0;
-  padding-bottom: 68px;
 }
 
 /* GRID main, catalog */
@@ -1863,7 +1878,8 @@ input[type="radio"].visually-hidden {
   background: var(--basic-grey-scale);
 }
 .range-controls .bar{
-  width: 70%;
+  padding-top: 1px;
+  width: 78%;
   height: 2px;
   background: var(--basic-green);
 }
@@ -1882,7 +1898,7 @@ input[type="radio"].visually-hidden {
   left: 18px;
 }
 .range-controls .toogle-max{
-  left:130px;
+  left:160px;
 }
 .price-controls{
   display: flex;
@@ -1898,7 +1914,7 @@ input[type="radio"].visually-hidden {
 .price-controls input{
   font-family: inherit;
   font-size: inherit;
-  width: 95px;
+  width: 83px;
   padding: 0;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -1907,6 +1923,7 @@ input[type="radio"].visually-hidden {
   background: var(--basic-brown);
   border-radius: 5px;
   margin-bottom: 25px;
+  padding-left: 12px;
 }
 .max-price input::placeholder{
   color:var(--basic-black)
@@ -1968,7 +1985,6 @@ input[type="radio"].visually-hidden {
   padding-bottom: 9px;
   min-width: 192px;
   border: none;
-  outline: none;
   background-color: var(--basic-white);
   text-transform: uppercase;
 }
@@ -2076,7 +2092,6 @@ input[type="radio"].visually-hidden {
   padding-top: 11px;
   padding-bottom: 9px;
   border: none;
-  outline: none;
   margin-top: 37px;
   margin-bottom: 37px;
 }
