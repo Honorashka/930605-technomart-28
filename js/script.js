@@ -25,6 +25,21 @@ window.addEventListener("keydown", function (evt) {
   }
 });
 
+// slaider
+
+var next = document.querySelector(".button-next");
+var back = document.querySelector(".button-back");
+var slaidernext = document.querySelector(".advantages-gallery-drill");
+var slaiderback = document.querySelector(".advantages-gallery");
+
+next.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  slaidernext.classList.add("advantages-gallery-show");
+});
+back.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  slaidernext.classList.remove("advantages-gallery-show");
+});
 
 
 
@@ -53,7 +68,7 @@ window.addEventListener("keydown", function (evt) {
       popupmap.classList.remove("modal-show")
     }
   }
-})
+});
 
 
 // feedback show

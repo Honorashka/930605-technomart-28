@@ -503,10 +503,6 @@ input[type="radio"].visually-hidden {
 .main-navigation a:active{
   background-color: var(--basic-blue-verydark);
 }
-.advantages li:not(:nth-child(4)){
-  max-width: 300px;
-  min-height: 123px;
-}
 .advantages h3{
   font-size: 24px;
   line-height: 30px;
@@ -576,9 +572,7 @@ input[type="radio"].visually-hidden {
   background-position: right;
   position: relative;
 }
-.advantages-gallery-show {
-  display: block;
-}
+
 .advantages-gallery-hidden {
   display: none;
 }
@@ -591,9 +585,12 @@ input[type="radio"].visually-hidden {
   background-position: right;
   position: relative;
   display: none;
+  order:2;
 }
-
-.advantages-gallery figure {
+.advantages-gallery-show {
+  display: block;
+}
+.advantages-gallery-figure {
   background: rgba(0, 0, 0, 0.25);
   margin: 0;
   min-width: 620px;
@@ -611,7 +608,19 @@ input[type="radio"].visually-hidden {
   padding-left: 24px;
   text-transform: uppercase;
 }
-.advantages-gallery p {
+.advantages-gallery-drill h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+  color: var(--basic-white);
+  padding-top: 23px;
+  padding-bottom: 5px;
+  padding-left: 24px;
+  text-transform: uppercase;
+}
+.advantages-gallery-text{
   padding: 0;
   margin: 0;
   font-size: 18px;
