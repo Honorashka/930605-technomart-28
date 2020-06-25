@@ -294,13 +294,13 @@ input[type="radio"].visually-hidden {
 .main-phone-wrapper {
   text-align: center;
   position: relative;
-  padding-left: 25px;
+  padding-left: 43px;
 }
 .phone::before {
   content: "";
   position: absolute;
   top: 15px;
-  left: 67px;
+  left: 84px;
   width: 17px;
   height: 19px;
   background-image: url("../img/main-phone-wrapper.svg");
@@ -309,6 +309,7 @@ input[type="radio"].visually-hidden {
 }
 .main-login {
   position: relative;
+  margin-left: 20px;
 }
 .main-login a {
   display: inline-block;
@@ -378,7 +379,7 @@ input[type="radio"].visually-hidden {
   display: inline-block;
   margin: 0;
   padding: 0;
-  padding-top: 12px;
+  padding-top: 14px;
   padding-bottom: 12px;
   margin-bottom: 7px;
   position: relative;
@@ -398,7 +399,7 @@ input[type="radio"].visually-hidden {
   height: 17px;
   background-image: url("../img/icon-logout.svg");
   position: absolute;
-  top:14px;
+  top:16px;
   right:17px;
 }
 .username a:hover:before {
@@ -434,7 +435,7 @@ input[type="radio"].visually-hidden {
   height: 18px;
   background-image: url("../img/human.svg");
   position: absolute;
-  top:12px;
+  top:14px;
   left: 15px;
 }
 .username a:hover {
@@ -445,6 +446,7 @@ input[type="radio"].visually-hidden {
 }
 .username-status {
   text-align: center;
+  padding-top: 3px;
 }
 .username-status a{
   font-size: 16px;
@@ -514,7 +516,7 @@ input[type="radio"].visually-hidden {
 .advantages{
   color: var(--basic-white);
   margin-top: 60px;
-  margin-bottom: 59px;
+  margin-bottom: 60px;
 }
 .advantages-button{
   display: inline-block;
@@ -585,7 +587,6 @@ input[type="radio"].visually-hidden {
   background-position: right;
   position: relative;
   display: none;
-  order:2;
 }
 .advantages-gallery-show {
   display: block;
@@ -608,18 +609,6 @@ input[type="radio"].visually-hidden {
   padding-left: 24px;
   text-transform: uppercase;
 }
-.advantages-gallery-drill h3 {
-  margin: 0;
-  padding: 0;
-  font-size: 36px;
-  line-height: 36px;
-  font-weight: 700;
-  color: var(--basic-white);
-  padding-top: 23px;
-  padding-bottom: 5px;
-  padding-left: 24px;
-  text-transform: uppercase;
-}
 .advantages-gallery-text{
   padding: 0;
   margin: 0;
@@ -631,7 +620,7 @@ input[type="radio"].visually-hidden {
 .button-gallery {
   padding: 11px 46px 10px 46px;
   position: absolute;
-  bottom: 27px;
+  bottom: 23px;
   left: 25px;
   font-size: 14px;
   line-height: 18px;
@@ -724,7 +713,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 25px;
+  padding-top: 26px;
   padding-bottom: 24px;
 }
 .product h2{
@@ -872,8 +861,8 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
   color: var(--basic-blue-light);
   padding-left: 28px;
-  padding-top: 30px;
-  padding-bottom: 28px;
+  padding-top: 31px;
+  padding-bottom: 31px;
 }
 .manufacturer-popular .button {
   display: inline-block;
@@ -923,11 +912,11 @@ input[type="radio"].visually-hidden {
 .service-addditional {
   display: flex;
   align-items: flex-start;
-  background-image: url("../img/truck-delivery.png");
-  background-repeat: no-repeat;
-  background-position: right;
-  margin-top: 67px;
-  padding-bottom: 115px ;
+  /*background-image: url("../img/truck-delivery.png");*/
+  /*background-repeat: no-repeat;*/
+  /*background-position: right;*/
+  margin-top: 66px;
+  padding-bottom: 35px ;
 }
 .service-wrapper{
   display: flex;
@@ -970,12 +959,40 @@ input[type="radio"].visually-hidden {
   color: var(--basic-blue-light);
 }
 .service-delivery-wrapper {
+  min-width: 619px;
+  min-height: 261px;
   margin-left: 60px;
 }
 .service-delivery-wrapper h2 {
   margin: 0;
   margin-bottom: 26px;
   color: var(--basic-blue-light);
+}
+.service-block-wrapper {
+ /*display: none;*/
+  background-image: url("../img/truck-delivery.png");
+  background-repeat: no-repeat;
+  background-position: right 18px;
+}
+
+.credit-block-wrapper {
+  display: none;
+  background-image: url("../img/service-credit.png");
+  background-repeat: no-repeat;
+  background-position: right 18px;
+}
+.credit-block-wrapper .button {
+  display: inline-block;
+  min-width: 220px;
+  padding-top: 11px;
+  padding-bottom: 9px;
+  margin-top: 20px;
+}
+.guarantee-block-wrapper {
+  display: none;
+  background-image: url("../img/guarantee.png");
+  background-repeat: no-repeat;
+  background-position: right 18px;
 }
 .service-button{
   font-weight: 700;
@@ -1012,7 +1029,7 @@ input[type="radio"].visually-hidden {
 .company-info{
   background-color: var(--basic-white);
   color:var(--basic-black);
-  padding-bottom: 71px;
+  padding-bottom: 70px;
 }
 .company-info h2{
   font-size: 30px;
@@ -1028,7 +1045,7 @@ input[type="radio"].visually-hidden {
   font-size: 13px;
   line-height: 24px;
   margin: 0;
-  margin-top: 26px;
+  margin-top: 27px;
 }
 .company-shopping-delivery{
   padding: 0;
@@ -1818,7 +1835,7 @@ input[type="radio"].visually-hidden {
 }
 .catalog-history{
   background-color: var(--basic-brown-light);
-  padding-bottom: 71px;
+  padding-bottom: 73px;
 }
 .catalog-history h2{
   font-size: 30px;

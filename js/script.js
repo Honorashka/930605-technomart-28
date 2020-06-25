@@ -32,10 +32,16 @@ var back = document.querySelector(".button-back");
 var slaidernext = document.querySelector(".advantages-gallery-drill");
 var slaiderback = document.querySelector(".advantages-gallery");
 
+
+// next.onclick = function() {
+//   slaidernext.classList.toggle("advantages-gallery-show");
+//   slaidernext.classList.toggle("advantages-gallery-hidden");
+// };
 next.addEventListener("click", function (evt) {
   evt.preventDefault();
-  slaidernext.classList.add("advantages-gallery-show");
+  slaidernext.classList.add("advantages-gallery-show")
 });
+
 back.addEventListener("click", function (evt) {
   evt.preventDefault();
   slaidernext.classList.remove("advantages-gallery-show");
