@@ -6,13 +6,16 @@
 :root{
   --basic-white: #FFFFFF;
   --basic-white-border: #E5E5E5;
+  --basic-white-background: #F2F6F8;
   --basic-black:#000000;
   --basic-blue-light: #32425C;
   --basic-blue-dark:#293449;
   --basic-blue-verydark:#1D2739;
   --basic-red: #EE3643;
   --basic-red-dark: #BA2732;
+  --basic-yellow-light: #FFD180;
   --basic-yellow: #FFD180;
+  --basic-yellow-background:#FFC047;
   --basic-green: #63A63E;
   --basic-green-light: #5FBB2D;
   --basic-green-dark: #518534;
@@ -20,15 +23,23 @@
   --basic-grey-light: #C5C5C5;
   --basic-grey: #A9A9A9;
   --basic-background-grey: #F3F7F9;
-  --basic-yellow-light: #FFD180;
   --basic-grey-overlight: #F1F5F7;
   --basic-brown-light:#F1F5F7;
   --basic-brown:#F7F3EC;
   --basic-sand-background: #F9F5F0;
+  --basic-sand-light: #FFDA96;
   --basic-grey-scale:#D7DCDE;
   --basic-grey-toogle:#ABABAB;
   --basic-grey-modal: #F1F1F1;
   --basic-background-feedback: #F4F4F4 ;
+  --special-background-yellow: #FFBF47;
+  --special-background-blue: #3BBCE3 ;
+  --special-background-pink: #DC91D8;
+  --special-background-green: #8ED78F;
+  --special-border-white: #EAEAEA;
+  --special-shadow-bluelight: #405069;
+  --special-shadow-green:#367315;
+  --special-gradient-blue: #212A3A;
 }
 
 /* Global */
@@ -459,7 +470,7 @@ input[type="radio"].visually-hidden {
   content: "";
   width: 6px;
   height: 6px;
-  background: linear-gradient(0deg, #32425C, #32425C), #FFFFFF;
+  background: linear-gradient(0deg, var(--basic-blue-light), var(--basic-blue-light), var(--basic-white);
   position: absolute;
   top: 6px;
   right: -22px;
@@ -476,7 +487,7 @@ input[type="radio"].visually-hidden {
   line-height: 24px;
   width: 940px;
   background-color: var(--basic-blue-light);
-  box-shadow: inset 0px -5px 0px #293449;
+  box-shadow: inset 0px -5px 0px var(--basic-blue-dark);
   margin: 0;
   display: flex;
   justify-content: space-around;
@@ -546,20 +557,20 @@ input[type="radio"].visually-hidden {
   background-color: rgba(169, 169, 169, 0.3);
 }
 .advantages-materials{
-  background-color: #FFBF47;
+  background-color: var(--special-background-yellow);
 }
 .icon-materials {
   right: 42px;
   bottom: 28px;
 }
 .advantages-tools{
-  background-color: #3BBCE3;
+  background-color: var(--special-background-blue);
 }
 .icon-tools {
   right:31px;
 }
 .advantages-technics{
-  background-color: #DC91D8;
+  background-color: var(--special-background-pink);
 }
 .icon-technic {
   right: 30px;
@@ -686,7 +697,6 @@ input[type="radio"].visually-hidden {
   margin: 0;
   display: grid;
   grid-template-columns: 300px 300px 300px;
-  /*grid-template-rows: 130px 130px 130px;*/
   gap:20px;
 
 }
@@ -695,14 +705,14 @@ input[type="radio"].visually-hidden {
   grid-row: 2/4;
 }
 .advantages-discounts{
-  background-color: #8ED78F;
+  background-color: var(--special-background-green);
 }
 .icon-discounts {
   bottom: 28px;
   right: 46px;
 }
 .advantages-delivery{
-  background-color: #FFC047;
+  background-color: var(--basic-yellow-background);
 }
 .icon-delivery {
   right: 30px;
@@ -757,7 +767,7 @@ input[type="radio"].visually-hidden {
   width: 220px;
   min-height: 318px;
   background-color: var(--basic-white);
-  border: 1px solid #EAEAEA;
+  border: 1px solid var(--special-border-white);
   text-align: center;
   margin-bottom: 15px;
   display: flex;
@@ -876,7 +886,7 @@ input[type="radio"].visually-hidden {
   height: 143px;
   background-color: var(--basic-white);
   text-align: center;
-  border: 1px solid #EAEAEA;
+  border: 1px solid var(--special-border-white);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -911,9 +921,6 @@ input[type="radio"].visually-hidden {
 .service-addditional {
   display: flex;
   align-items: flex-start;
-  /*background-image: url("../img/truck-delivery.png");*/
-  /*background-repeat: no-repeat;*/
-  /*background-position: right;*/
   margin-top: 66px;
   padding-bottom: 35px ;
 }
@@ -999,7 +1006,7 @@ input[type="radio"].visually-hidden {
   line-height: 30px;
   color: var(--basic-white);
   background-color: var(--basic-blue-light);
-  box-shadow: 0px 1px 0px #293449, inset 0px 1px 0px #405069;
+  box-shadow: 0px 1px 0px var(--basic-blue-dark), inset 0px 1px 0px var(--special-shadow-bluelight);
   border: none;
   display: inline-block;
   text-align: left;
@@ -1153,7 +1160,7 @@ input[type="radio"].visually-hidden {
   margin: 0;
 }
 .footer-navigation-list-info a{
-  color: #F1F5F7;
+  color: var(--basic-brown-light);
   margin-left: 59px;
 }
 .footer-navigation-list-catalog{
@@ -1164,7 +1171,7 @@ input[type="radio"].visually-hidden {
   margin-top: 36px;
 }
 .footer-navigation-list-catalog a{
-  color: #FFDA96;
+  color: var(--basic-sand-light);
   margin-left: 59px;
 }
 .footer-navigation-menu a:hover{
@@ -1187,7 +1194,7 @@ input[type="radio"].visually-hidden {
 .footer-img-wrapper{
   width: 44px;
   height: 44px;
-  background: linear-gradient(0deg, #212A3A, #212A3A);
+  background: linear-gradient(0deg, var(--special-gradient-blue), var(--special-gradient-blue));
   border-radius: 100%;
   position: relative;
 }
@@ -1282,7 +1289,7 @@ input[type="radio"].visually-hidden {
   font-weight: 400;
   color: var(--basic-blue-light);
   text-transform: uppercase;
-  background-color: #F2F6F8;
+  background-color: var(--basic-white-background);
   margin: 0;
   padding: 0;
   padding-top: 29px;
@@ -1463,7 +1470,7 @@ input[type="radio"].visually-hidden {
   margin-bottom: 10px;
   background: var(--basic-green);
   color: var(--basic-white);
-  box-shadow: inset 0px -3px 0px #367315;
+  box-shadow: inset 0px -3px 0px var(--special-shadow-green);
   border-radius: 2px;
   position: relative;
 }
