@@ -470,7 +470,7 @@ input[type="radio"].visually-hidden {
   content: "";
   width: 6px;
   height: 6px;
-  background: linear-gradient(0deg, var(--basic-blue-light), var(--basic-blue-light), var(--basic-white);
+  background: linear-gradient(0deg, var(--basic-blue-light), var(--basic-blue-light), var(--basic-white));
   position: absolute;
   top: 6px;
   right: -22px;
@@ -909,7 +909,7 @@ input[type="radio"].visually-hidden {
   grid-template-rows: 145px 145px;
   gap:21px;
   padding: 0;
-  te
+  /*te*/
 }
 .manufacturer-item img{
   display: inline-block;
@@ -1870,7 +1870,7 @@ input[type="radio"].visually-hidden {
   display: grid;
   grid-template-columns: 240px 1fr;
   align-content: start;
-}}
+}
 .page-catalog .page-title{
   grid-column: 1 / -1;
   padding: 0;
