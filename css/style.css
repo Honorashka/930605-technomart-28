@@ -105,13 +105,6 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
   position: relative;
 }
-/*.main-info-checkout a {*/
-/*  margin: 0;*/
-/*  padding: 0;*/
-/*  display: block;*/
-/*  text-align: center;*/
-/*  padding-top: 10px;*/
-/*}*/
 .main-info-wrapper:active{
   opacity: 0.5;
 }
@@ -122,16 +115,15 @@ input[type="radio"].visually-hidden {
   display: block;
   text-align: center;
   padding-top: 9px;
-
   position: relative;
-  padding-right: 28px;
-  padding-left: 27px;
+  padding-right: 36px;
+  padding-left: 25px;
 }
 .main-info-bookmark:after {
   content: "";
   position: absolute;
   top:12px;
-  left: 6px;
+  left: 1px;
   background-image: url("../img/icon-bookmark.svg");
   width: 14px;
   height: 16px;
@@ -140,7 +132,7 @@ input[type="radio"].visually-hidden {
   content: "";
   position: absolute;
   top:12px;
-  left: 2px;
+  left: 1px;
   background-image: url("../img/icon-bookmark-hover.svg");
   width: 14px;
   height: 16px;
@@ -152,17 +144,27 @@ input[type="radio"].visually-hidden {
   display: block;
   text-align: center;
   padding-top: 10px;
-
-
   position: relative;
-  padding-left: 46px;
-  padding-right: 27px;
+  padding-left: 39px;
+  padding-right: 25px;
+}
+.main-info-basket-active {
+  background-color: var(--basic-red);
+  max-width: 150px;
+  margin: 0;
+  padding: 0;
+  display: block;
+  text-align: center;
+  padding-top: 10px;
+  position: relative;
+  padding-left: 35px;
+  padding-right: 23px;
 }
 .main-info-basket:after {
   content: "";
   position: absolute;
   top:13px;
-  left: 23px;
+  left: 13px;
   background-image: url("../img/icon-basket.svg");
   width: 15px;
   height: 15px;
@@ -171,17 +173,16 @@ input[type="radio"].visually-hidden {
   content: "";
   position: absolute;
   top:13px;
-  left: 23px;
+  left: 13px;
   background-image: url("../img/icon-cart-basket-hover.svg");
   width: 15px;
   height: 15px;
 }
 .main-logo{
   background-color: var(--basic-red) ;
-  /*box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);*/
   min-width: 219px;
   text-align: center;
-  padding-top: 11px;
+  padding-top: 10px;
   padding-bottom: 8px;
   position: relative;
 }
@@ -214,7 +215,7 @@ input[type="radio"].visually-hidden {
 }
 .header-search-wrapper {
   position: relative;
-  padding-right: 16px;
+  padding-right: 19px;
   max-width: 271px;
 }
 .header-search-wrapper svg {
@@ -260,8 +261,6 @@ input[type="radio"].visually-hidden {
   display: block;
   text-align: center;
   padding-top: 10px;
-
-
   background-color: var(--basic-green);
   padding-left: 19px;
   padding-right: 16px;
