@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 2 version,not dead,not ie <= 11
+*/
+
 *, *::before, *::after {
   box-sizing: content-box;
 }
@@ -74,6 +81,7 @@ input[type="radio"].visually-hidden {
   border: 0;
   padding: 0;
   white-space: nowrap;
+  -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
@@ -81,6 +89,7 @@ input[type="radio"].visually-hidden {
 .page-body{
   min-height:100%;
   display: grid;
+  grid-template-rows: -webkit-min-content 1fr -webkit-max-content;
   grid-template-rows: min-content 1fr max-content;
   align-content: start;
 }
@@ -138,7 +147,7 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/icon-bookmark.svg");
   width: 14px;
   height: 16px;
- }
+}
 .main-info-bookmark:hover:after {
   content: "";
   position: absolute;
@@ -266,8 +275,20 @@ input[type="radio"].visually-hidden {
   fill: var(--basic-red);
   opacity: 1;
 }
+.header-search::-webkit-input-placeholder {
+  color: var(--basic-white);
+}
+.header-search::-moz-placeholder {
+  color: var(--basic-white);
+}
 .header-search::placeholder {
   color: var(--basic-white);
+}
+.header-search::-webkit-input-placeholder:focus {
+  opacity: 0.5;
+}
+.header-search::-moz-placeholder:focus {
+  opacity: 0.5;
 }
 .header-search::placeholder:focus {
   opacity: 0.5;
@@ -445,7 +466,7 @@ input[type="radio"].visually-hidden {
   height: 17px;
   background-image: url("../img/icon-logout-hover.svg");
   position: absolute;
-  top:14px;
+  top:16px;
   right:17px;
 }
 .username a:active:after{
@@ -454,7 +475,7 @@ input[type="radio"].visually-hidden {
   height: 17px;
   background-image: url("../img/icon-logout.svg");
   position: absolute;
-  top:14px;
+  top:16px;
   right:17px;
 }
 .username a:active:before {
@@ -463,7 +484,7 @@ input[type="radio"].visually-hidden {
   height: 18px;
   background-image: url("../img/human.svg");
   position: absolute;
-  top:14px;
+  top:12px;
   left: 15px;
 }
 .username a:hover {
@@ -829,6 +850,7 @@ input[type="radio"].visually-hidden {
   font-size: 17px;
   line-height: 18px;
   font-weight: 700;
+  -webkit-text-decoration-line: line-through;
   text-decoration-line: line-through;
   color: var(--basic-grey);
   padding-left: 7px;
@@ -868,6 +890,7 @@ input[type="radio"].visually-hidden {
   display: inline-block;
   padding-top: 21px;
   padding-right: 16px;
+  -o-object-fit: contain;
   object-fit: contain;
 
 }
@@ -992,7 +1015,7 @@ input[type="radio"].visually-hidden {
   color: var(--basic-blue-light);
 }
 .service-block-wrapper {
- /*display: none;*/
+  /*display: none;*/
   background-image: url("../img/truck-delivery.png");
   background-repeat: no-repeat;
   background-position: right 18px;
@@ -1655,6 +1678,8 @@ input[type="radio"].visually-hidden {
   position: relative;
   display: block;
   cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
   user-select: none;
   padding-left: 36px;
 }
@@ -1765,7 +1790,7 @@ input[type="radio"].visually-hidden {
   padding-top: 4px;
 }
 
- /*Карточки товара*/
+/*Карточки товара*/
 
 .content-filter{
   font-weight: 700;
@@ -1993,6 +2018,12 @@ input[type="radio"].visually-hidden {
   margin-bottom: 25px;
   padding-left: 12px;
 }
+.max-price input::-webkit-input-placeholder{
+  color:var(--basic-black)
+}
+.max-price input::-moz-placeholder{
+  color:var(--basic-black)
+}
 .max-price input::placeholder{
   color:var(--basic-black)
 }
@@ -2122,12 +2153,32 @@ input[type="radio"].visually-hidden {
   border-radius: 2px;
   padding-left: 10px;
 }
+.feedback-form input::-webkit-input-placeholder{
+  font-family: "PT Sans",Arial,sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  padding-left: 12px;
+}
+.feedback-form input::-moz-placeholder{
+  font-family: "PT Sans",Arial,sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  padding-left: 12px;
+}
 .feedback-form input::placeholder{
   font-family: "PT Sans",Arial,sans-serif;
   font-size: 13px;
   line-height: 24px;
   font-weight: 400;
   padding-left: 12px;
+}
+.feedback-form input:first-child::-webkit-input-placeholder{
+  text-transform: capitalize;
+}
+.feedback-form input:first-child::-moz-placeholder{
+  text-transform: capitalize;
 }
 .feedback-form input:first-child::placeholder{
   text-transform: capitalize;
@@ -2200,14 +2251,33 @@ input[type="radio"].visually-hidden {
 }
 .modal-show {
   display: block;
+  -webkit-animation: bounce 0.6s;
   animation: bounce 0.6s;
 }
 .modal-error{
   display: block;
+  -webkit-animation: shake 0.6s;
   animation: shake 0.6s;
 }
 
 /*Animations*/
+@-webkit-keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
 @keyframes bounce {
   0% {
     transform: translateY(-2000px);
@@ -2223,6 +2293,28 @@ input[type="radio"].visually-hidden {
 
   100% {
     transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
   }
 }
 
