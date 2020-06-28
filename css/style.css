@@ -359,14 +359,16 @@ input[type="radio"].visually-hidden {
 .main-login {
   position: relative;
   margin-left: 20px;
+  display: flex;
 }
 .main-login a {
-  display: inline-block;
+  display: block;
   font-size: 21px;
   line-height: 21px;
   color: var(--basic-black);
   background-color: var(--basic-white);
-  padding: 14px 23px;
+  padding: 14px 24px;
+  vertical-align: baseline;
 }
 .main-login a:last-child {
   margin-left: 9px;
@@ -400,14 +402,14 @@ input[type="radio"].visually-hidden {
 }
 
 .phone {
-  display: inline-block;
+  display: block;
   font-size: 21px;
   line-height: 30px;
   font-weight: 700;
   color: var(--basic-red);
   border: 2px solid white;
   margin: 0;
-  padding: 7px 45px 8px 74px;
+  padding: 8px 45px 8px 74px;
 }
 .main-address {
   font-size: 14px;
@@ -425,10 +427,10 @@ input[type="radio"].visually-hidden {
   color: var(--basic-black);
   text-transform: capitalize;
   background-color: var(--basic-white);
-  display: inline-block;
+  display: block;
   margin: 0;
   padding: 0;
-  padding-top: 14px;
+  padding-top: 15px;
   padding-bottom: 12px;
   margin-bottom: 7px;
   position: relative;
@@ -439,7 +441,7 @@ input[type="radio"].visually-hidden {
   height: 18px;
   background-image: url("../img/human.svg");
   position: absolute;
-  top:12px;
+  top:15px;
   left: 15px;
 }
 .username a:after{
@@ -457,7 +459,7 @@ input[type="radio"].visually-hidden {
   height: 18px;
   background-image: url("../img/human-hover.svg");
   position: absolute;
-  top:12px;
+  top:15px;
   left: 15px;
 }
 .username a:hover:after {
@@ -484,7 +486,7 @@ input[type="radio"].visually-hidden {
   height: 18px;
   background-image: url("../img/human.svg");
   position: absolute;
-  top:12px;
+  top:15px;
   left: 15px;
 }
 .username a:hover {
@@ -535,7 +537,7 @@ input[type="radio"].visually-hidden {
   min-height: 60px;
 }
 .main-navigation-list a{
-  display: inline-block;
+  display: block;
   color:  var(--basic-white);
   padding: 16px 29px 20px 29px;
 }
@@ -569,6 +571,7 @@ input[type="radio"].visually-hidden {
 }
 .advantages-button{
   display: inline-block;
+  vertical-align: baseline;
   min-width: 133px;
   font-size: 14px;
   line-height: 18px;
@@ -707,6 +710,7 @@ input[type="radio"].visually-hidden {
 }
 .button {
   display: inline-block;
+  vertical-align: baseline;
   text-align: center;
   color: var(--basic-white);
   text-transform: uppercase;
@@ -864,7 +868,7 @@ input[type="radio"].visually-hidden {
   margin: 0;
   margin-top: 13px;
   margin-bottom: 21px;
-  display: inline-block;
+  display: block;
   text-align: center;
   min-width: 115px;
   min-height: 38px;
@@ -887,7 +891,7 @@ input[type="radio"].visually-hidden {
 .catalog-item-image {
   height: 159px;
   width: 200px;
-  display: inline-block;
+  display: block;
   padding-top: 21px;
   padding-right: 16px;
   -o-object-fit: contain;
@@ -915,7 +919,7 @@ input[type="radio"].visually-hidden {
   padding-bottom: 31px;
 }
 .manufacturer-popular .button {
-  display: inline-block;
+  display: block;
   padding-top: 11px;
   padding-bottom: 9px;
   padding-right: 38px;
@@ -1028,7 +1032,6 @@ input[type="radio"].visually-hidden {
   background-position: right 18px;
 }
 .credit-block-wrapper .button {
-  display: inline-block;
   min-width: 220px;
   padding-top: 11px;
   padding-bottom: 9px;
@@ -1048,7 +1051,6 @@ input[type="radio"].visually-hidden {
   background-color: var(--basic-blue-light);
   box-shadow: 0px 1px 0px var(--basic-blue-dark), inset 0px 1px 0px var(--special-shadow-bluelight);
   border: none;
-  display: inline-block;
   text-align: left;
   min-width: 212px;
   padding-left:22px;
@@ -1127,6 +1129,7 @@ input[type="radio"].visually-hidden {
   min-width: 220px;
   padding-top: 11px;
   padding-bottom: 9px;
+  vertical-align: baseline;
 }
 .company-contact div{
   margin-top: 33px;
@@ -1155,6 +1158,7 @@ input[type="radio"].visually-hidden {
 }
 .footer-navigation-info .main-logo{
   display: inline-block;
+  vertical-align: baseline;
   padding: 0;
   margin: 0;
   min-width: 220px;
@@ -1332,9 +1336,6 @@ input[type="radio"].visually-hidden {
   background-color: var(--basic-white-background);
   margin: 0;
   padding: 0;
-  padding-top: 29px;
-  padding-bottom: 30px;
-  padding-left: 29px;
 }
 
 .catalog-filter{
@@ -1917,6 +1918,9 @@ input[type="radio"].visually-hidden {
   grid-column: 1 / -1;
   padding: 0;
   margin: 0;
+  padding-top: 29px;
+  padding-bottom: 30px;
+  padding-left: 29px;
 }
 .page-catalog .catalog-filter{
   margin-right: 28px;
