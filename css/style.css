@@ -245,7 +245,7 @@ input[type="radio"].visually-hidden {
 .header-search {
   background: transparent;
   border: none;
-  min-width: 246px;
+  min-width: 240px;
   padding-left: 42px;
   padding-bottom: 11px;
   padding-top: 11px;
