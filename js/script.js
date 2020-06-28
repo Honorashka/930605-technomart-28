@@ -1,21 +1,15 @@
 // add baskets
-var buy = document.querySelector(".button-buy");
+var buy = document.querySelectorAll(".button-buy");
 var popupbuy = document.querySelector(".modal-basket");
 var closebuy = popupbuy.querySelector(".button-close");
-var buttonbuy = popupbuy.querySelector(".basket-button-buy");
 
-buy.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  popupbuy.classList.add("modal-show");
-  buttonbuy.focus();
+for(var i=0;i<buy.length;i++)buy[i].addEventListener("click",function(a){a.preventDefault();
 
-});
-closebuy.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  popupbuy.classList.remove("modal-show")
-
-});
-
+  popupbuy.classList.add("modal-show")}
+  );
+  closebuy.addEventListener("click",function(a){a.preventDefault();
+  popupbuy.classList.remove("modal-show");
+  });
 window.addEventListener("keydown", function (evt) {
   if(evt.keyCode === 27){
     if (popupbuy.classList.contains("modal-show")){
@@ -33,10 +27,6 @@ var slaidernext = document.querySelector(".advantages-gallery-drill");
 var slaiderback = document.querySelector(".advantages-gallery");
 
 
-// next.onclick = function() {
-//   slaidernext.classList.toggle("advantages-gallery-show");
-//   slaidernext.classList.toggle("advantages-gallery-hidden");
-// };
 next.addEventListener("click", function (evt) {
   evt.preventDefault();
   slaidernext.classList.add("advantages-gallery-show")
@@ -83,8 +73,9 @@ var feedback = document.querySelector(".button-write");
 var popupfeedback = document.querySelector(".modal-feedback");
 var closefeedback = popupfeedback.querySelector(".button-close");
 var loginfeedback = popupfeedback.querySelector(".login-feedback");
-var loginemail = popupfeedback.querySelector(".feedback-email");
+var loginemail = popupfeedback.querySelector(".email-feedback");
 var loginform = popupfeedback.querySelector(".feedback-form");
+var buttonfeed =popupfeedback.querySelector(".feedback-button");
 
 var isStorageSupport = true;
 var storage ="";
@@ -95,6 +86,8 @@ try {
 catch (err) {
   isStorageSupport = false;
 }
+
+
 
 feedback.addEventListener ("click", function (evt) {
   evt.preventDefault();
@@ -108,7 +101,6 @@ feedback.addEventListener ("click", function (evt) {
   }
 });
 
-
 closefeedback.addEventListener ("click", function (evt) {
   evt.preventDefault();
   popupfeedback.classList.remove("modal-show");
@@ -119,8 +111,9 @@ closefeedback.addEventListener ("click", function (evt) {
 loginform.addEventListener("submit", function (evt) {
   if (!loginfeedback.value || !loginemail.value) {
     evt.preventDefault();
-    popupfeedback.classList.add("modal-error");
+    popupfeedback.classList.remove("modal-error");
     popupfeedback.offsetWidth = popupfeedback.offsetWidth;
+    popupfeedback.classList.add("modal-error");
   } else {
     if (isStorageSupport) {
       localStorage.setItem("login", loginfeedback.value);
