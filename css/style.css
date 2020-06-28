@@ -1492,6 +1492,7 @@ input[type="radio"].visually-hidden {
 }
 .catalog-item-buy {
   display: none;
+  padding-top: 20px;
 }
 .catalog-item-buy button {
   margin: 0;
